@@ -1,4 +1,3 @@
-````markdown id="x3na84"
 # Sphinx Protocol Website
 
 > Official website for Sphinx Protocol — a post-quantum blockchain infrastructure for Universal Sovereign Identity (USI).
@@ -10,9 +9,7 @@
 
 ## Live Website
 
-```txt
-Coming Soon
-```
+https://sphinx.pages.dev
 
 ---
 
@@ -202,5 +199,3 @@ Cryptocurrency, cryptography, and blockchain systems involve technical and finan
 ---
 
 Built by the Sphinx Foundation
-````
-s
