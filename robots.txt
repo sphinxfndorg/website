@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://DOMAIN.com/sitemap.xml
+Sitemap: https://website.sphinxfnd.workers.dev/sitemap.xml
 Disallow: /private/
 Disallow: /admin/
