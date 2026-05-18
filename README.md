@@ -1,6 +1,6 @@
 # Sphinx Protocol Website
 
-> Official website for Sphinx Protocol — a post-quantum blockchain infrastructure for Universal Sovereign Identity (USI).
+> Official website for Sphinx FND.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Cloudflare Pages](https://img.shields.io/badge/Deployed%20on-Cloudflare_Pages-F38020?logo=cloudflare)](https://pages.cloudflare.com/)
@@ -198,4 +198,4 @@ Cryptocurrency, cryptography, and blockchain systems involve technical and finan
 
 ---
 
-Built by the Sphinx Foundation
+Built by the Sphinx FND
