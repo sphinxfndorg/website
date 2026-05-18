@@ -9,7 +9,7 @@
 
 ## Live Website
 
-https://sphinx.pages.dev
+https://website.sphinxfnd.workers.dev/
 
 ---
 
