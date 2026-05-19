@@ -373,6 +373,85 @@
       line-height: 1.8;
     }
 
+    /* Add to your CSS */
+    .vision-mission-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 80px;
+    }
+
+    .vm-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 32px 28px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .vision-card {
+      border-left: 4px solid var(--accent);
+    }
+
+    .mission-card {
+      border-left: 4px solid var(--gold);
+    }
+
+    .vm-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent2);
+    }
+
+    .vm-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text3);
+      margin-bottom: 12px;
+    }
+
+    .vision-card .vm-eyebrow { color: var(--accent); }
+    .mission-card .vm-eyebrow { color: var(--gold); }
+
+    .vm-arrow {
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+      opacity: 0.6;
+    }
+
+    .vision-card .vm-arrow { color: var(--accent); }
+    .mission-card .vm-arrow { color: var(--gold); }
+
+    .vm-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .vm-desc {
+      font-size: 0.9rem;
+      color: var(--text2);
+      line-height: 1.7;
+    }
+
+    .vm-desc strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .vision-mission-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+
     /* ─── PILLARS ───────────────────────────────────────────── */
     .pillars-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2px;
