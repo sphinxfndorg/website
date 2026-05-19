@@ -9,7 +9,7 @@ Sphinx Protocol is a post-quantum blockchain and identity network for Universal 
 - SPIF address: Sphinx Protocol identity fingerprint address format.
 - Sphinx Foundation / SPHNX Foundation: foundation and community stewardship around the protocol.
 ## Important URLs
-- Website: https://website.sphinxfnd.workers.dev/ <-Update with your actual domainss
+- Website: https://sphinxfnd.org
 - Source code: https://github.com/sphinxorg/protocol
 - License: https://github.com/sphinxorg/protocol/blob/main/LICENSE
 - Issues: https://github.com/sphinxorg/protocol/issues

@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://website.sphinxfnd.workers.dev/</loc>
-    <lastmod>2024-01-01</lastmod>
+    <loc>https://sphinxfnd.org/</loc>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://website.sphinxfnd.workers.dev/#vision</loc>
+    <loc>https://sphinxfnd.org/vision/</loc>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://website.sphinxfnd.workers.dev/#technology</loc>
+    <loc>https://sphinxfnd.org/technology/</loc>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://website.sphinxfnd.workers.dev/#roadmap</loc>
+    <loc>https://sphinxfnd.org/roadmap/</loc>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://website.sphinxfnd.workers.dev/#ico</loc>
+    <loc>https://sphinxfnd.org/ico/</loc>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://website.sphinxfnd.workers.dev/#foundation</loc>
+    <loc>https://sphinxfnd.org/foundation/</loc>
+    <lastmod>2026-05-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

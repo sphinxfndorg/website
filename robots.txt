@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: https://website.sphinxfnd.workers.dev/sitemap.xml
+
 Disallow: /private/
 Disallow: /admin/
+Disallow: /assets/backup/
+Disallow: /tmp/
+Disallow: /config/
+
+Sitemap: https://sphinxfnd.org/sitemap.xml
