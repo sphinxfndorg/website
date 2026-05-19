@@ -734,6 +734,43 @@
       .github-banner { flex-direction: column; }
     }
 
+
+    /* ─── FOOTER MOBILE FIX - COMMUNITY SECTION ───────────────── */
+    @media (max-width: 600px) {
+      /* Ensure footer grid is single column */
+      .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 32px;
+      }
+
+      /* Make community links stack properly */
+      .footer-col ul li a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        word-break: keep-all;
+        white-space: nowrap;
+      }
+
+      /* If text is still overflowing, allow wrapping */
+      .footer-col ul li a {
+        white-space: normal;
+        word-break: break-word;
+      }
+
+      /* Keep SVG icons from shrinking or breaking */
+      .footer-col ul li a svg {
+        flex-shrink: 0;
+      }
+
+      /* Reduce font size slightly on very small screens */
+      @media (max-width: 480px) {
+        .footer-col ul li a {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
     /* ─── HIGHLIGHT / SELECTION ─────────────────────────────── */
 
     /* ─── SPIF ANATOMY BLOCK ────────────────────────────────── */
