@@ -1,3 +1,4 @@
+/* // website/js/main.js */
 // ─── THEME TOGGLE ────────────────────────────────────────────
 const toggle = document.getElementById('themeToggle');
 const html = document.documentElement;
