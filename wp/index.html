@@ -29,29 +29,20 @@ a{color:inherit}
 .btn:hover{border-color:rgba(79,195,247,.5)}
 .btn-primary{background:linear-gradient(135deg,#1a78b5,#0d4d78);border-color:rgba(79,195,247,.5)}
 .btn-gold{border-color:rgba(255,213,79,.45)}
-main{flex:1;display:flex;flex-direction:column;width:100%;max-width:1200px;margin:0 auto;padding:26px 22px 30px;gap:16px}
-.hero{text-align:center;padding:10px 0 4px}
-.eyebrow{font-family:var(--mono);color:var(--accent);font-size:.72rem;letter-spacing:.28em;margin-bottom:10px}
-h1{font-size:clamp(1.5rem,3.4vw,2.4rem);line-height:1.15}
-h1 .gold{color:var(--gold)}
-.sub{color:var(--text2);margin-top:10px;font-size:.95rem}
+main{flex:1;display:flex;flex-direction:column;width:100%;max-width:1200px;margin:0 auto;padding:22px 22px 26px;gap:0}
 .viewer-card{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:var(--bg2);box-shadow:0 20px 60px rgba(0,0,0,.35)}
 .viewer-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border-bottom:1px solid var(--border);color:var(--text2);font-size:.8rem;flex-wrap:wrap}
 .file-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.04);border:1px solid var(--border);padding:7px 12px;border-radius:999px}
 .dot{width:8px;height:8px;border-radius:50%;background:#69f0ae;box-shadow:0 0 10px rgba(105,240,174,.8)}
-.viewer{background:#101020;height:calc(100vh - 330px);min-height:520px}
+.viewer{background:#101020;height:calc(100vh - 175px);min-height:520px}
 .viewer iframe,.viewer object,.viewer embed{width:100%;height:100%;border:0;background:#fff;display:block}
 .fallback{display:none;padding:48px 24px;text-align:center;color:var(--text2);background:var(--bg2)}
 .fallback h2{color:var(--text);margin-bottom:10px}
 .fallback p{max-width:620px;margin:0 auto 8px;line-height:1.7;font-size:.92rem}
 .fallback code{color:var(--gold);background:rgba(255,213,79,.08);border:1px solid rgba(255,213,79,.25);padding:2px 8px;border-radius:6px;font-size:.82rem}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:4px}
-.step{border:1px solid var(--border);border-radius:12px;padding:14px;background:rgba(255,255,255,.02);text-align:left}
-.step b{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;color:var(--accent);margin-bottom:6px}
-.step span{color:var(--text2);font-size:.85rem;line-height:1.6}
 footer{text-align:center;color:var(--text3);font-size:.78rem;padding:18px;border-top:1px solid var(--border)}
 footer a{color:var(--text2)}
-@media(max-width:720px){.steps{grid-template-columns:1fr}.viewer{height:70vh;min-height:480px}.topbar{flex-direction:column;align-items:flex-start}}
+@media(max-width:720px){.viewer{height:70vh;min-height:480px}.topbar{flex-direction:column;align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -64,11 +55,6 @@ footer a{color:var(--text2)}
 </nav>
 </header>
 <main>
-<div class="hero">
-<div class="eyebrow">SPHINX PROTOCOL · OFFICIAL WHITEPAPER</div>
-<h1>Post-Quantum Blockchain for <span class="gold">Universal Sovereign Identity</span></h1>
-<p class="sub">The embedded reader below loads <b>sphinx-whitepaper.pdf</b> from this directory. If the PDF is missing, use the download button after uploading the file.</p>
-</div>
 <section class="viewer-card" aria-label="Whitepaper PDF viewer">
 <div class="viewer-toolbar">
 <span class="file-pill"><span class="dot"></span> <span>sphinx-whitepaper.pdf</span></span>
@@ -86,11 +72,6 @@ footer a{color:var(--text2)}
 <p><a class="btn btn-primary" href="https://sphinxfnd.org" target="_blank" rel="noopener" style="display:inline-block;margin-top:14px;">Back to sphinxfnd.org</a></p>
 </div>
 </section>
-<div class="steps">
-<div class="step"><b>01 · PUBLISH</b><span>Place the final PDF at wp/sphinx-whitepaper.pdf and redeploy. No HTML change needed.</span></div>
-<div class="step"><b>02 · VERIFY</b><span>Open https://whitepaper.sphinxfnd.org/sphinx-whitepaper.pdf directly to confirm it renders.</span></div>
-<div class="step"><b>03 · LINK</b><span>The main site button “Read Whitepaper” already opens this subdomain in a new tab.</span></div>
-</div>
 </main>
 <footer>
 © 2024-present Sphinx Foundation · <a href="https://sphinxfnd.org" target="_blank" rel="noopener">sphinxfnd.org</a> · <a href="https://foundation.sphinxfnd.org" target="_blank" rel="noopener">foundation.sphinxfnd.org</a>
