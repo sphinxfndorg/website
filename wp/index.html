@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sphinx Protocol Whitepaper | Post-Quantum Blockchain for Universal Sovereign Identity</title>
+<meta name="description" content="Official Sphinx Protocol whitepaper — post-quantum blockchain infrastructure for Universal Sovereign Identity. Read or download the PDF." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://whitepaper.sphinxfnd.org/" />
+<link rel="icon" type="image/x-icon" href="https://sphinxfnd.org/assets/favicon.ico" />
+<meta name="theme-color" content="#0a0a1a" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://whitepaper.sphinxfnd.org/" />
+<meta property="og:title" content="Sphinx Protocol Whitepaper" />
+<meta property="og:description" content="Official Sphinx Protocol whitepaper — post-quantum blockchain infrastructure for Universal Sovereign Identity." />
+<meta property="og:site_name" content="Sphinx Protocol" />
+<style>
+:root{--bg:#0a0a1a;--bg2:#0e0e1e;--surface:#141428;--border:rgba(255,255,255,.09);--accent:#4fc3f7;--gold:#ffd54f;--text:#e8e8f0;--text2:#a8a8c0;--text3:#6a6a85;--font:'Exo 2',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'Orbitron','Exo 2',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:var(--font);background:radial-gradient(1200px 600px at 50% -10%,rgba(79,195,247,.12),transparent 60%),var(--bg);color:var(--text);display:flex;flex-direction:column;min-height:100vh}
+a{color:inherit}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px;border-bottom:1px solid var(--border);background:rgba(10,10,26,.85);position:sticky;top:0;z-index:10}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--mono);letter-spacing:.18em;font-size:.85rem}
+.brand-mark{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(79,195,247,.25),rgba(255,213,79,.2));border:1px solid var(--border)}
+.brand small{display:block;font-family:var(--font);letter-spacing:.02em;color:var(--text2);font-size:.72rem}
+.top-actions{display:flex;gap:10px;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:10px 16px;border-radius:10px;text-decoration:none;border:1px solid var(--border);color:var(--text);background:rgba(255,255,255,.03);white-space:nowrap}
+.btn:hover{border-color:rgba(79,195,247,.5)}
+.btn-primary{background:linear-gradient(135deg,#1a78b5,#0d4d78);border-color:rgba(79,195,247,.5)}
+.btn-gold{border-color:rgba(255,213,79,.45)}
+main{flex:1;display:flex;flex-direction:column;width:100%;max-width:1200px;margin:0 auto;padding:26px 22px 30px;gap:16px}
+.hero{text-align:center;padding:10px 0 4px}
+.eyebrow{font-family:var(--mono);color:var(--accent);font-size:.72rem;letter-spacing:.28em;margin-bottom:10px}
+h1{font-size:clamp(1.5rem,3.4vw,2.4rem);line-height:1.15}
+h1 .gold{color:var(--gold)}
+.sub{color:var(--text2);margin-top:10px;font-size:.95rem}
+.viewer-card{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:var(--bg2);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.viewer-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border-bottom:1px solid var(--border);color:var(--text2);font-size:.8rem;flex-wrap:wrap}
+.file-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.04);border:1px solid var(--border);padding:7px 12px;border-radius:999px}
+.dot{width:8px;height:8px;border-radius:50%;background:#69f0ae;box-shadow:0 0 10px rgba(105,240,174,.8)}
+.viewer{background:#101020;height:calc(100vh - 330px);min-height:520px}
+.viewer iframe,.viewer object,.viewer embed{width:100%;height:100%;border:0;background:#fff;display:block}
+.fallback{display:none;padding:48px 24px;text-align:center;color:var(--text2);background:var(--bg2)}
+.fallback h2{color:var(--text);margin-bottom:10px}
+.fallback p{max-width:620px;margin:0 auto 8px;line-height:1.7;font-size:.92rem}
+.fallback code{color:var(--gold);background:rgba(255,213,79,.08);border:1px solid rgba(255,213,79,.25);padding:2px 8px;border-radius:6px;font-size:.82rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:4px}
+.step{border:1px solid var(--border);border-radius:12px;padding:14px;background:rgba(255,255,255,.02);text-align:left}
+.step b{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;color:var(--accent);margin-bottom:6px}
+.step span{color:var(--text2);font-size:.85rem;line-height:1.6}
+footer{text-align:center;color:var(--text3);font-size:.78rem;padding:18px;border-top:1px solid var(--border)}
+footer a{color:var(--text2)}
+@media(max-width:720px){.steps{grid-template-columns:1fr}.viewer{height:70vh;min-height:480px}.topbar{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="https://sphinxfnd.org" target="_blank" rel="noopener"><span class="brand-mark">◈</span><span>SPHINX<small>Whitepaper · whitepaper.sphinxfnd.org</small></span></a>
+<nav class="top-actions">
+<a class="btn" href="https://sphinxfnd.org" target="_blank" rel="noopener">← sphinxfnd.org</a>
+<a class="btn btn-primary" href="./sphinx-whitepaper.pdf" download>⬇ Download PDF</a>
+<a class="btn btn-gold" href="./sphinx-whitepaper.pdf" target="_blank" rel="noopener">Open in new tab ↗</a>
+</nav>
+</header>
+<main>
+<div class="hero">
+<div class="eyebrow">SPHINX PROTOCOL · OFFICIAL WHITEPAPER</div>
+<h1>Post-Quantum Blockchain for <span class="gold">Universal Sovereign Identity</span></h1>
+<p class="sub">The embedded reader below loads <b>sphinx-whitepaper.pdf</b> from this directory. If the PDF is missing, use the download button after uploading the file.</p>
+</div>
+<section class="viewer-card" aria-label="Whitepaper PDF viewer">
+<div class="viewer-toolbar">
+<span class="file-pill"><span class="dot"></span> <span>sphinx-whitepaper.pdf</span></span>
+<span id="viewerStatus">Embedded viewer · scroll / zoom inside the document</span>
+</div>
+<div class="viewer" id="pdfViewer">
+<object data="./sphinx-whitepaper.pdf#view=FitH" type="application/pdf" aria-label="Sphinx whitepaper PDF">
+<iframe src="./sphinx-whitepaper.pdf#view=FitH" title="Sphinx whitepaper PDF"></iframe>
+</object>
+</div>
+<div class="fallback" id="pdfFallback">
+<h2>Whitepaper PDF not found yet</h2>
+<p>Upload your whitepaper PDF to the <code>wp/</code> folder with the exact filename <code>sphinx-whitepaper.pdf</code> (next to this <code>index.html</code>).</p>
+<p>Expected path: <code>wp/sphinx-whitepaper.pdf</code> → served as <code>https://whitepaper.sphinxfnd.org/sphinx-whitepaper.pdf</code></p>
+<p><a class="btn btn-primary" href="https://sphinxfnd.org" target="_blank" rel="noopener" style="display:inline-block;margin-top:14px;">Back to sphinxfnd.org</a></p>
+</div>
+</section>
+<div class="steps">
+<div class="step"><b>01 · PUBLISH</b><span>Place the final PDF at wp/sphinx-whitepaper.pdf and redeploy. No HTML change needed.</span></div>
+<div class="step"><b>02 · VERIFY</b><span>Open https://whitepaper.sphinxfnd.org/sphinx-whitepaper.pdf directly to confirm it renders.</span></div>
+<div class="step"><b>03 · LINK</b><span>The main site button “Read Whitepaper” already opens this subdomain in a new tab.</span></div>
+</div>
+</main>
+<footer>
+© 2024-present Sphinx Foundation · <a href="https://sphinxfnd.org" target="_blank" rel="noopener">sphinxfnd.org</a> · <a href="https://foundation.sphinxfnd.org" target="_blank" rel="noopener">foundation.sphinxfnd.org</a>
+</footer>
+<script>
+(function(){var pdfUrl='./sphinx-whitepaper.pdf';var viewer=document.getElementById('pdfViewer');var fallback=document.getElementById('pdfFallback');var status=document.getElementById('viewerStatus');fetch(pdfUrl,{method:'HEAD'}).then(function(res){if(!res.ok){viewer.style.display='none';fallback.style.display='block';status.textContent='PDF missing — upload sphinx-whitepaper.pdf to /wp/';}}).catch(function(){})})();
+</script>
+</body>
+</html>
