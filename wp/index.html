@@ -20,14 +20,10 @@
 html,body{height:100%}
 body{font-family:var(--font);background:radial-gradient(1200px 600px at 50% -10%,rgba(79,195,247,.12),transparent 60%),var(--bg);color:var(--text);display:flex;flex-direction:column;min-height:100vh}
 a{color:inherit}
-.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px;border-bottom:1px solid var(--border);background:rgba(10,10,26,.85);position:sticky;top:0;z-index:10}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--mono);letter-spacing:.18em;font-size:.85rem}
-.brand-mark{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(79,195,247,.25),rgba(255,213,79,.2));border:1px solid var(--border)}
-.brand small{display:block;font-family:var(--font);letter-spacing:.02em;color:var(--text2);font-size:.72rem}
+.topbar{display:flex;align-items:center;justify-content:flex-end;gap:16px;padding:14px 22px;border-bottom:1px solid var(--border);background:rgba(10,10,26,.85);position:sticky;top:0;z-index:10}
 .top-actions{display:flex;gap:10px;flex-wrap:wrap}
 .btn{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:10px 16px;border-radius:10px;text-decoration:none;border:1px solid var(--border);color:var(--text);background:rgba(255,255,255,.03);white-space:nowrap}
 .btn:hover{border-color:rgba(79,195,247,.5)}
-.btn-primary{background:linear-gradient(135deg,#1a78b5,#0d4d78);border-color:rgba(79,195,247,.5)}
 .btn-gold{border-color:rgba(255,213,79,.45)}
 main{flex:1;display:flex;flex-direction:column;width:100%;max-width:1200px;margin:0 auto;padding:22px 22px 26px;gap:0}
 .viewer-card{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:var(--bg2);box-shadow:0 20px 60px rgba(0,0,0,.35)}
@@ -47,10 +43,7 @@ footer a{color:var(--text2)}
 </head>
 <body>
 <header class="topbar">
-<a class="brand" href="https://sphinxfnd.org" target="_blank" rel="noopener"><span class="brand-mark">◈</span><span>SPHINX<small>Whitepaper · whitepaper.sphinxfnd.org</small></span></a>
 <nav class="top-actions">
-<a class="btn" href="https://sphinxfnd.org" target="_blank" rel="noopener">← sphinxfnd.org</a>
-<a class="btn btn-primary" href="./sphinx-whitepaper.pdf" download>⬇ Download PDF</a>
 <a class="btn btn-gold" href="./sphinx-whitepaper.pdf" target="_blank" rel="noopener">Open in new tab ↗</a>
 </nav>
 </header>
@@ -69,7 +62,7 @@ footer a{color:var(--text2)}
 <h2>Whitepaper PDF not found yet</h2>
 <p>Upload your whitepaper PDF to the <code>wp/</code> folder with the exact filename <code>sphinx-whitepaper.pdf</code> (next to this <code>index.html</code>).</p>
 <p>Expected path: <code>wp/sphinx-whitepaper.pdf</code> → served as <code>https://whitepaper.sphinxfnd.org/sphinx-whitepaper.pdf</code></p>
-<p><a class="btn btn-primary" href="https://sphinxfnd.org" target="_blank" rel="noopener" style="display:inline-block;margin-top:14px;">Back to sphinxfnd.org</a></p>
+<p><a class="btn btn-gold" href="https://sphinxfnd.org" target="_blank" rel="noopener" style="display:inline-block;margin-top:14px;">Back to sphinxfnd.org</a></p>
 </div>
 </section>
 </main>
